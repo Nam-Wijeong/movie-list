@@ -1,7 +1,11 @@
+@charset "UTF-8";
 .main {
-  background-color: #f2f2f2;
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
   width: 1003px;
   margin: 90px auto;
+  padding: 28px;
+  background-color: #f2f2f2;
 }
 
 .main .title {
@@ -12,5 +16,128 @@
   width: 50%;
   margin: 0 auto;
   padding: 40px 0px 36px 0px;
+}
+
+.title-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title-category .category {
+  padding: 28px 60px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #828282;
+}
+
+.title-category .category.cur-movie {
+  font-weight: 900;
+  color: #000;
+}
+
+.main .movie-list {
+  padding: 26px;
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+}
+
+.main .movie-list li {
+  position: relative;
+  width: 220px;
+  padding: 18px 20px;
+  -webkit-box-shadow: 0px 0px 5px 0px #0000004d;
+          box-shadow: 0px 0px 5px 0px #0000004d;
+  border: 1px solid #bdbdbd;
+  background-color: #fff;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+}
+
+.main .movie-list li .movie-img {
+  width: 180px;
+  -webkit-box-shadow: 0px 4px 4px 0px #00000040;
+          box-shadow: 0px 4px 4px 0px #00000040;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+}
+
+.main .movie-list li .movie-title {
+  margin: 11px 0;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.main .movie-list li dl {
+  margin-bottom: 28px;
+}
+
+.main .movie-list li dt,
+.main .movie-list li dd {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.main .movie-list li dt {
+  color: #828282;
+}
+
+.main .movie-list li dd {
+  color: #000;
+}
+
+.main .movie-list li dd:nth-child(2) {
+  padding-right: 42px;
+}
+
+.main .movie-list li dd:nth-child(4)::before {
+  content: url(images/Star.svg);
+  display: inline-block;
+  width: 14px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.main .movie-list li .movie-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0 0 10px 10px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #bdbdbd;
+}
+
+.main .movie-list li .reserve {
+  border-right: 1px solid #bdbdbd;
+  padding: 10px 0;
+}
+
+.main .movie-list li .trailer::before {
+  content: '';
+  display: inline-block;
+  background-image: url(images/아이콘_재생.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: -3px;
 }
 /*# sourceMappingURL=style.css.map */

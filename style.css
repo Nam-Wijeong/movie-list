@@ -88,6 +88,10 @@
   margin: 5px 0;
 }
 
+.main .movie-list li dd:nth-of-type(3) {
+  margin-right: 80px;
+}
+
 .main .movie-list li dt {
   color: #828282;
 }
@@ -203,10 +207,24 @@
   color: #4f4f4f;
 }
 
+.footer .information dt:nth-child(1)::after {
+  content: '|';
+  display: inline-block;
+  margin-left: 4px;
+}
+
 .footer .information dd {
   font-size: 14px;
   font-weight: 400;
   color: #4f4f4f;
+}
+
+.footer .information dd:nth-of-type(1):after,
+.footer .information dd:nth-of-type(2):after,
+.footer .information dd:nth-of-type(3):after {
+  content: '|';
+  display: inline-block;
+  margin-left: 4px;
 }
 
 .footer .information .copyright {

@@ -1,8 +1,8 @@
 @charset "UTF-8";
 .main {
-  border: 2px solid #bdbdbd;
+  outline: 2px solid #bdbdbd;
   border-radius: 15px;
-  width: 1003px;
+  width: 1060px;
   margin: 90px auto;
   padding: 28px;
   background-color: #f2f2f2;
@@ -13,7 +13,7 @@
   font-size: 24px;
   font-weight: 700;
   border-bottom: 2px solid #bdbdbd;
-  width: 50%;
+  width: 650px;
   margin: 0 auto;
   padding: 40px 0px 36px 0px;
 }
@@ -40,8 +40,13 @@
 }
 
 .main .movie-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
   padding: 26px;
-  border: 2px solid #bdbdbd;
+  outline: 2px solid #bdbdbd;
   border-radius: 15px;
 }
 
@@ -51,17 +56,18 @@
   padding: 18px 20px;
   -webkit-box-shadow: 0px 0px 5px 0px #0000004d;
           box-shadow: 0px 0px 5px 0px #0000004d;
-  border: 1px solid #bdbdbd;
+  outline: 1px solid #bdbdbd;
   background-color: #fff;
-  border: 1px solid #bdbdbd;
+  outline: 1px solid #bdbdbd;
   border-radius: 10px;
 }
 
 .main .movie-list li .movie-img {
   width: 180px;
+  height: 250px;
   -webkit-box-shadow: 0px 4px 4px 0px #00000040;
           box-shadow: 0px 4px 4px 0px #00000040;
-  border: 1px solid #bdbdbd;
+  outline: 1px solid #bdbdbd;
   border-radius: 10px;
 }
 
@@ -91,14 +97,19 @@
 }
 
 .main .movie-list li dd:nth-child(2) {
-  padding-right: 42px;
+  padding-right: 38px;
 }
 
 .main .movie-list li dd:nth-child(4)::before {
-  content: url(images/Star.svg);
+  content: '';
   display: inline-block;
   width: 14px;
-  vertical-align: middle;
+  height: 14px;
+  background-image: url(images/Star.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  vertical-align: -1px;
   margin-right: 4px;
 }
 
@@ -125,7 +136,7 @@
 
 .main .movie-list li .reserve {
   border-right: 1px solid #bdbdbd;
-  padding: 10px 0;
+  padding: 11px 0 9px 0;
 }
 
 .main .movie-list li .trailer::before {
@@ -139,5 +150,68 @@
   height: 16px;
   margin-right: 4px;
   vertical-align: -3px;
+}
+
+.main .movie-list li:nth-child(7) dd:nth-child(2) {
+  padding-right: 20px;
+}
+
+.footer {
+  margin-top: 135px;
+  background-color: #f2f2f2;
+  padding: 0 100px;
+}
+
+.footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 52px 0 42px 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.footer .contact .company-name {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer .contact .sns-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 24px;
+}
+
+.footer .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 36px 0px;
+}
+
+.footer .information dt {
+  font-size: 14px;
+  font-weight: 700;
+  color: #4f4f4f;
+}
+
+.footer .information dd {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+
+.footer .information .copyright {
+  font-size: 14px;
+  font-weight: 700;
+  color: #4f4f4f;
 }
 /*# sourceMappingURL=style.css.map */
